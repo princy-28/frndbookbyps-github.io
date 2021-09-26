@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scrap Book</title>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body class="myhomepage">
+
+    <button id="logout" onclick="logout();" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+    <button id="home" onclick="goToHome();" class="glyphicon glyphicon-home btn btn-success">Home</button>
+    <div class="container">
+        <center>
+            <h1 class="btn header"> Scrap Book</h1>
+
+            <div class="form-group  col-lg-4 col-md-6 col-sm-6 col-xs-11 addnewuser_div">
+
+                <label id="status"></label><br>
+                <label id="status_success"></label>
+                <br>
+                <label>Your Name :</label>
+                <input type="text" id="Friend_name" class="form-control" placeholder="#Your name my dear friend">
+
+                <label>Your Date of Birth:</label>
+                <input type="date" id="friend_birth" class="form-control">
+
+
+
+                <label>Your Message:</label>
+
+                <textarea class="form-control" id="Message" rows="3"></textarea>
+
+
+
+            </div>
+
+            <button onclick="addFriend();" class="btn btn-success">Add Friend</button>
+
+
+
+        </center>
+    </div>
+
+
+    <script src="memory.js"></script>
+</body>
+
+</html>
